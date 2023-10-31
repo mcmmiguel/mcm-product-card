@@ -2,7 +2,7 @@
 
 ## Ejemplo
 ```
-import {} from 'mcm-product-card';
+import { ProductCard, ProductImage, ProductTitle, ProductButtons } from 'mcm-product-card';
 ```
 
 ```
