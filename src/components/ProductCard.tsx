@@ -40,9 +40,6 @@ export const ProductCard = ({ children, product, className, style, onChange, val
                     increaseBy,
                     reset,
                 }) : null}
-                {/* <ProductImage img={product.img} />
-                <ProductTitle title={product.title} />
-                <ProductButtons counter={counter} increaseBy={increaseBy} /> */}
             </div>
         </Provider>
     );
