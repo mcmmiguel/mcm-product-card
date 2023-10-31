@@ -7,6 +7,10 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "url": "https://github.com/mcmmiguel/mcm-product-card",
+    "type": "git"
+  },
   "engines": {
     "node": ">=10"
   },
@@ -14,6 +18,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
+    "test:watch": "tsdx test --watch --no-cache",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -47,17 +52,36 @@
     }
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
     "@rollup/plugin-image": "^3.0.3",
     "@size-limit/preset-small-lib": "^10.0.1",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
+    "babel-jest": "^29.7.0",
     "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "@types/react-test-renderer": "^18.0.5",
+    "react-test-renderer": "^18.2.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^10.0.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "product",
+    "card",
+    "mcmmiguel"
+  ],
+  "dependencies": {},
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
   }
 }
